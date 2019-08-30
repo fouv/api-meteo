@@ -15,4 +15,5 @@ if ($data === false ||curl_getinfo($curl,CURLINFO_HTTP_CODE) !== 200){
      var_dump(curl_error($curl));
 } else {
             $data = json_decode($data, true);
-     echo 'il fait '.$data['main']['temp'].' CÂ° 
+     echo 'il fait '.$data['main'].$data['temp'].' C¢X' ;
+}
